@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F7558EB92490376A004BD650 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7558EB82490376A004BD650 /* main.swift */; };
+		F7558EC02490377D004BD650 /* HexToRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7558EBF2490377D004BD650 /* HexToRGB.swift */; };
+		F7558EC22490378F004BD650 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7558EC12490378F004BD650 /* Console.swift */; };
+		F7558EC42490379F004BD650 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7558EC32490379F004BD650 /* File.swift */; };
+		F7558EC6249037B0004BD650 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7558EC5249037B0004BD650 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		F7558EB52490376A004BD650 /* HexToRGB */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HexToRGB; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7558EB82490376A004BD650 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F7558EBF2490377D004BD650 /* HexToRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexToRGB.swift; sourceTree = "<group>"; };
+		F7558EC12490378F004BD650 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		F7558EC32490379F004BD650 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		F7558EC5249037B0004BD650 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				F7558EB82490376A004BD650 /* main.swift */,
+				F7558EC5249037B0004BD650 /* App.swift */,
+				F7558EC32490379F004BD650 /* File.swift */,
+				F7558EC12490378F004BD650 /* Console.swift */,
+				F7558EBF2490377D004BD650 /* HexToRGB.swift */,
 			);
 			path = HexToRGB;
 			sourceTree = "<group>";
@@ -72,6 +84,7 @@
 				F7558EB12490376A004BD650 /* Sources */,
 				F7558EB22490376A004BD650 /* Frameworks */,
 				F7558EB32490376A004BD650 /* CopyFiles */,
+				F7558EC7249037C6004BD650 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -115,11 +128,35 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F7558EC7249037C6004BD650 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PRODUCT=\"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}\"\ncp -R \"${PRODUCT}\" \"/usr/local/bin/${TARGET_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7558EB12490376A004BD650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7558EC02490377D004BD650 /* HexToRGB.swift in Sources */,
+				F7558EC42490379F004BD650 /* File.swift in Sources */,
+				F7558EC22490378F004BD650 /* Console.swift in Sources */,
+				F7558EC6249037B0004BD650 /* App.swift in Sources */,
 				F7558EB92490376A004BD650 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
